@@ -8,7 +8,7 @@ Welcome to the official repository for my professional portfolio. This project s
 
 The best way to see my work is to visit the live site.
 
-**(https://7amzalam.github.io/)**
+**([https://7amzalam.github.io/](https://7amzalam.github.io/landing-pages-portfolio/))**
 
 ---
 
