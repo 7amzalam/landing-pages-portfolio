@@ -1,0 +1,60 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0c0c15 0%, #121220 100%);
+    color: #e0e0e8;
+    scroll-behavior: smooth;
+}
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.glow-border {
+    box-shadow: 0 0 20px rgba(0, 230, 204, 0.3);
+}
+.card-gradient {
+    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+}
+.accent-gradient {
+    background: linear-gradient(90deg, #00e6cc 0%, #00ffaa 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-gradient {
+    background: linear-gradient(90deg, #00e6cc 0%, #00ffaa 100%);
+    transition: all 0.3s ease;
+}
+.btn-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 230, 204, 0.4);
+}
+.process-step::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 80px;
+    height: 2px;
+    background: #00e6cc;
+    opacity: 0.3;
+}
+.process-step:last-child::after {
+    display: none;
+}
+@media (max-width: 768px) {
+    .process-step::after {
+        display: none;
+    }
+}
+.mobile-menu {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+}
+.mobile-menu.open {
+    transform: translateX(0);
+}

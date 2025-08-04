@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Lam | High-Performance Landing Pages</title>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-16x16.png">
+    <meta name="description" content="I'm Hamza Lam, a specialist in building high-performance landing pages that drive business growth. Combining strategic design with an AI-enhanced workflow to deliver beautiful, fast, and conversion-optimized pages.">
+    <meta property="og:title" content="Hamza Lam | High-Performance Landing Pages">
+    <meta property="og:description" content="I build beautiful, fast, and conversion-optimized landing pages that drive real business results.">
+    <meta property="og:image" content="https://your-domain.com/social-share-image.jpg">
+    <meta property="og:url" content="https://your-domain.com">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        electric: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        primary: '#00e6cc',
+                        secondary: '#00ffaa',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-opacity-90 bg-[#0c0c15] backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold tracking-tight">
+                        <span class="text-primary">Hamza</span> Lam
+                    </span>
+                </div>
+                <div class="hidden md:flex space-x-10">
+                    <a href="#about" class="text-gray-300 hover:text-primary transition-colors">About</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-primary transition-colors">Work</a>
+                    <a href="#process" class="text-gray-300 hover:text-primary transition-colors">Process</a>
+                    <a href="#contact" class="text-gray-300 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#contact" class="px-6 py-2 rounded-full font-medium btn-gradient text-gray-900">Get a Quote</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-toggle" class="text-gray-300 hover:text-primary transition-colors">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-0 z-40 bg-[#0c0c15] bg-opacity-95 backdrop-blur-lg md:hidden">
+        <div class="flex justify-end p-6">
+            <button id="mobile-menu-close" class="text-gray-300 hover:text-primary transition-colors">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full px-6 space-y-10">
+            <a href="#about" class="text-2xl text-gray-300 hover:text-primary transition-colors">About</a>
+            <a href="#portfolio" class="text-2xl text-gray-300 hover:text-primary transition-colors">Work</a>
+            <a href="#process" class="text-2xl text-gray-300 hover:text-primary transition-colors">Process</a>
+            <a href="#contact" class="text-2xl text-gray-300 hover:text-primary transition-colors">Contact</a>
+            <a href="#contact" class="mt-8 px-8 py-4 rounded-full font-semibold btn-gradient text-gray-900">Get a Quote</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center pt-16 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 max-w-4xl mx-auto">
+                    I Build <span class="accent-gradient">High-Performance</span> Landing Pages That Drive Business Growth.
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
+                    Using modern design principles and a technology-driven workflow, I create high-quality, professional landing pages that capture leads and drive sales.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+                    <a href="#portfolio" class="px-8 py-4 rounded-full font-semibold btn-gradient text-gray-900">View My Work</a>
+                    <a href="#contact" class="px-8 py-4 rounded-full font-medium border-2 border-primary text-primary hover:bg-primary/10 transition-colors">Get a Free Quote</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#about" class="text-gray-400 hover:text-primary" aria-label="Scroll to About section">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gradient-to-b from-[#0c0c15] to-[#121220]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-gray-800 glow-border">
+                            <img src="/images/profile-pic.webp" alt="Hamza Lam" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -inset-4 rounded-full bg-primary opacity-20 blur-xl animate-pulse-slow"></div>
+                    </div>
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">About Me</h2>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+                        "As a tech expert with a decade of hands-on experience, I specialize in creating high-converting landing pages. My unique methodology combines deep industry knowledge with advanced AI strategies, allowing me to transform your ideas into high-quality, professional products with exceptional speed and efficiency."
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="px-4 py-2 rounded-full bg-gray-800 text-primary font-medium">Landing Page Specialist</div>
+                        <div class="px-4 py-2 rounded-full bg-gray-800 text-primary font-medium">Conversion Optimization</div>
+                        <div class="px-4 py-2 rounded-full bg-gray-800 text-primary font-medium">AI-Enhanced Workflow</div>
+                        <div class="px-4 py-2 rounded-full bg-gray-800 text-primary font-medium">Performance Focused</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">My Work: A Showcase of Diverse & Effective Landing Pages</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Each project is meticulously crafted to achieve specific business goals while delivering exceptional user experiences.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Recommended image size: 800x450 pixels -->
+                <!-- Portfolio Item 1 -->
+                <div class="card-gradient rounded-2xl p-6 transform transition-all hover:-translate-y-2 border border-gray-800">
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 bg-gray-800 border border-gray-700">
+                        <img src="images/Azure Coastal Villas _ Luxury Oceanfront Living.webp" alt="Azure Coastal Villas" class="w-full h-full object-cover object-top" loading="lazy">
+                    </div>
+                    <div class="text-primary font-medium mb-2">Luxury Real Estate</div>
+                    <h3 class="text-xl font-bold mb-3">Azure Coastal Villas</h3>
+                    <p class="text-gray-400 mb-4">A high-end landing page for a luxury real estate project, focusing on an elegant and immersive user experience.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">High-End Visuals</span>
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">Immersive Experience</span>
+                    </div>
+                    <a href="https://7amzalam.github.io/azure-coastal-villas/" class="block w-full text-center bg-indigo-600 text-white font-semibold py-3 rounded-lg mt-6 hover:bg-indigo-700 transition-colors duration-300">
+                        View Live Project
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="card-gradient rounded-2xl p-6 transform transition-all hover:-translate-y-2 border border-gray-800">
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 bg-gray-800 border border-gray-700">
+                        <img src="images/SynthoWrite AI - AI-Powered Content Generation.webp" alt="SynthoWrite AI" class="w-full h-full object-cover object-top" loading="lazy">
+                    </div>
+                    <div class="text-primary font-medium mb-2">SaaS / AI Technology</div>
+                    <h3 class="text-xl font-bold mb-3">SynthoWrite AI</h3>
+                    <p class="text-gray-400 mb-4">A modern landing page for a SaaS product, designed to be vibrant, tech-focused, and drive free trial sign-ups.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">Tech-Focused</span>
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">SaaS Conversion</span>
+                    </div>
+                    <a href="https://7amzalam.github.io/SynthoWrite-AI-SaaS/" class="block w-full text-center bg-indigo-600 text-white font-semibold py-3 rounded-lg mt-6 hover:bg-indigo-700 transition-colors duration-300">
+                        View Live Project
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="card-gradient rounded-2xl p-6 transform transition-all hover:-translate-y-2 border border-gray-800">
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 bg-gray-800 border border-gray-700">
+                        <img src="images/Digital Marketing Launchpad 2025.webp" alt="Digital Marketing Launchpad" class="w-full h-full object-cover object-top" loading="lazy">
+                    </div>
+                    <div class="text-primary font-medium mb-2">Online Education</div>
+                    <h3 class="text-xl font-bold mb-3">Digital Marketing Launchpad</h3>
+                    <p class="text-gray-400 mb-4">A conversion-focused landing page for an online course, designed to build trust and encourage enrollments.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">Trust Building</span>
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">Course Enrollment</span>
+                    </div>
+                    <a href="https://7amzalam.github.io/digital-marketing-course/" class="block w-full text-center bg-indigo-600 text-white font-semibold py-3 rounded-lg mt-6 hover:bg-indigo-700 transition-colors duration-300">
+                        View Live Project
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="card-gradient rounded-2xl p-6 transform transition-all hover:-translate-y-2 border border-gray-800">
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 bg-gray-800 border border-gray-700">
+                        <img src="images/MindWell_ Your Meditation Guide.webp" alt="MindWell Meditation App" class="w-full h-full object-cover object-top" loading="lazy">
+                    </div>
+                    <div class="text-primary font-medium mb-2">Health & Wellness</div>
+                    <h3 class="text-xl font-bold mb-3">MindWell Meditation App</h3>
+                    <p class="text-gray-400 mb-4">A clean and calming landing page for a mobile app, focusing on a minimalist aesthetic to attract downloads.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">Minimalist Design</span>
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">App Downloads</span>
+                    </div>
+                    <a href="https://7amzalam.github.io/mindwell-app-page/" class="block w-full text-center bg-indigo-600 text-white font-semibold py-3 rounded-lg mt-6 hover:bg-indigo-700 transition-colors duration-300">
+                        View Live Project
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="card-gradient rounded-2xl p-6 transform transition-all hover:-translate-y-2 border border-gray-800">
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 bg-gray-800 border border-gray-700">
+                        <img src="images/Apex Digital Growth _ Data-Driven B2B Marketing.webp" alt="Apex Digital Growth" class="w-full h-full object-cover object-top" loading="lazy">
+                    </div>
+                    <div class="text-primary font-medium mb-2">B2B Marketing Agency</div>
+                    <h3 class="text-xl font-bold mb-3">Apex Digital Growth</h3>
+                    <p class="text-gray-400 mb-4">A professional and trustworthy landing page for a B2B agency, designed to generate qualified leads.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">B2B Lead Gen</span>
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">Professional</span>
+                    </div>
+                    <a href="https://7amzalam.github.io/Modern-B2B-Marketing/" class="block w-full text-center bg-indigo-600 text-white font-semibold py-3 rounded-lg mt-6 hover:bg-indigo-700 transition-colors duration-300">
+                        View Live Project
+                    </a>
+                </div>
+                
+                <!-- Portfolio Item 6: Artisan E-commerce Store -->
+                <div class="card-gradient rounded-2xl p-6 transform transition-all hover:-translate-y-2 border border-gray-800">
+                    <div class="h-48 rounded-xl overflow-hidden mb-6 bg-gray-800 border border-gray-700">
+                        <img src="images/Artisan E-commerce Store.webp" alt="Artisan E-commerce Store" class="w-full h-full object-cover object-top" loading="lazy">
+                    </div>
+                    <div class="text-primary font-medium mb-2">E-commerce / Product Page</div>
+                    <h3 class="text-xl font-bold mb-3">Valerius Artisan Chronograph</h3>
+                    <p class="text-gray-400 mb-4">A premium landing page for a single product, designed to boost its value and drive direct sales.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">Premium Product Sales</span>
+                        <span class="text-xs px-3 py-1 rounded-full bg-gray-800">Conversion Design</span>
+                    </div>
+                    <a href="https://7amzalam.github.io/Valerius-Artisan-Chronograph/" class="block w-full text-center bg-indigo-600 text-white font-semibold py-3 rounded-lg mt-6 hover:bg-indigo-700 transition-colors duration-300">
+                        View Live Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-24 bg-gradient-to-b from-[#121220] to-[#0c0c15]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">My Streamlined Creation Process</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">A proven workflow that delivers exceptional results efficiently.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
+                <!-- Step 1 -->
+                <div class="process-step relative flex flex-col items-center text-center w-full md:w-1/3 p-6">
+                    <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                        <span class="text-3xl font-bold text-primary">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Strategy & Discovery</h3>
+                    <p class="text-gray-400">Deep dive into your business goals, target audience, and competitive landscape to build the perfect strategy.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step relative flex flex-col items-center text-center w-full md:w-1/3 p-6">
+                    <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                        <span class="text-3xl font-bold text-primary">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Rapid Design & Development</h3>
+                    <p class="text-gray-400">Agile creation process using cutting-edge tools to build your landing page with speed and precision.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step relative flex flex-col items-center text-center w-full md:w-1/3 p-6">
+                    <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                        <span class="text-3xl font-bold text-primary">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Optimization & Launch</h3>
+                    <p class="text-gray-400">Rigorous testing, performance optimization, and conversion-focused tweaks before your big launch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="card-gradient rounded-2xl p-8 md:p-12 border border-gray-800">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Build Your High-Performance Landing Page?</h2>
+                    <p class="text-gray-400 max-w-xl mx-auto">Let's discuss how I can help you create a stunning, conversion-optimized landing page that drives real business results.</p>
+                </div>
+                
+                <!-- Success Message (Hidden by default) -->
+                <div id="success-message" class="hidden bg-green-900/30 border border-green-500/50 rounded-xl p-6 mb-6 text-center">
+                    <div class="text-green-400 text-2xl mb-2">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-400 mb-2">Message Sent Successfully!</h3>
+                    <p class="text-gray-300">Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                </div>
+
+                <form id="contact-form" action="https://formspree.io/f/xpwlrrrj" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 focus:border-primary focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 focus:border-primary focus:outline-none transition-colors">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-300 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 focus:border-primary focus:outline-none transition-colors"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="px-10 py-4 rounded-full font-semibold btn-gradient text-gray-900 text-lg">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold">
+                        <span class="text-primary">Hamza</span> Lam
+                    </span>
+                    <p class="text-gray-500 mt-2">High-Performance Landing Page Specialist</p>
+                </div>
+             <div class="flex space-x-6">
+             
+                <a href="رابط-لينكدإن-الخاص-بك" class="text-gray-500 hover:text-primary transition-colors" aria-label="Visit my LinkedIn profile">
+                    <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="رابط-جيت-هاب-الخاص-بك" class="text-gray-500 hover:text-primary transition-colors" aria-label="Visit my GitHub profile">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                &copy; <span id="copyright-year"></span> Hamza Lam. All rights reserved. Crafted with precision for maximum impact.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
