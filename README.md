@@ -1,4 +1,4 @@
-# Hamza Lam - Landing Page Specialist & Digital Product Creator
+
 
 # Hamza Lam - High-Performance Landing Page Portfolio
 
